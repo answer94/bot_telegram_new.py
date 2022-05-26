@@ -203,7 +203,7 @@ async def bot_state10(message: types.Message, state: FSMContext):
 
 def register_handlers_client(dp: Dispatcher):
     dp.register_message_handler(command_start, commands='start')
-    dp.register_message_handler(cancel_handler, Text(equals='cancel', ignore_case=True), state='*')
+    dp.register_message_handler(cancel_handler, Text(equals='\cancel', ignore_case=True), state='*')
     dp.register_message_handler(cancel_handler1, Text(equals='отмена', ignore_case=True), state='*')
     dp.register_message_handler(bot_state1, state=FsmBot.state1)
     dp.register_message_handler(bot_state2, state=FsmBot.state2)
