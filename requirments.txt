@@ -1,0 +1,7 @@
+aiogram
+asyncio
+aiogram_calendar
+docxtpl
+openpyxl
+pdfminer.six
+
